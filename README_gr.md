@@ -23,7 +23,7 @@
 4. Τρέξτε μέσω Docker
 
     ```bash
-    docker compose up --build -d # -d: λειτουργεί σε αποσύνδεση
+    docker compose up --build -d # -d: αποσπασμένη λειτουργία
     ```
 
 5. Επισκεφθείτε την εφαρμογή στο `localhost:80`
