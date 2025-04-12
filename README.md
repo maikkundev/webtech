@@ -1,5 +1,7 @@
 # Web Technologies Project
 
+[English](README.md) | [Ελληνικά](README_gr.md)
+
 ## How to build and run
 
 1. Download and install Docker Desktop

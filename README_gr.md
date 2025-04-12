@@ -1,5 +1,7 @@
 # Project Τεχνολογιές Διαδικτύου
 
+[English](README.md) | [Ελληνικά](README_gr.md)
+
 ## Πώς να τρέξετε
 
 1. Κατεβάστε και εγκαταστήστε το Docker Desktop
