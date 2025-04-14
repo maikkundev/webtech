@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Website Purpose and Registration</title>
+    <title>Help Center</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
     <style>
       [data-theme="dark"] {
@@ -37,10 +37,7 @@
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg navbar-light">
       <div class="container">
-        <a class="navbar-brand" href="#">Our Website</a>
-        <div class="navbar-nav ms-auto">
-          <a class="nav-link" href="help.html">Help</a>
-        </div>
+        <a class="navbar-brand" href="index.html">Our Website</a>
       </div>
     </nav>
 
@@ -48,82 +45,73 @@
 
     <!-- Main Content -->
     <main class="container py-5">
-      <h1 class="text-center mb-4">Welcome to Our Platform</h1>
+      <h1 class="text-center mb-4">Help Center</h1>
 
-      <div class="accordion" id="mainAccordion">
-        <!-- Purpose Section -->
+      <div class="accordion" id="helpAccordion">
+        <!-- Getting Started -->
         <div class="accordion-item">
           <h2 class="accordion-header">
-            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#purpose">
-              Our Purpose
+            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#gettingStarted">
+              Getting Started
             </button>
           </h2>
-          <div id="purpose" class="accordion-collapse collapse show" data-bs-parent="#mainAccordion">
+          <div id="gettingStarted" class="accordion-collapse collapse show" data-bs-parent="#helpAccordion">
             <div class="accordion-body">
-              <p>Our platform aims to provide a comprehensive solution for managing and organizing your tasks efficiently. We focus on:</p>
+              <h5>Basic Navigation</h5>
+              <p>Our platform is designed to be intuitive and easy to use. Here are the main areas:</p>
               <ul>
-                <li>Task Management</li>
-                <li>Team Collaboration</li>
-                <li>Project Organization</li>
-                <li>Progress Tracking</li>
+                <li>Dashboard: Your main workspace</li>
+                <li>Projects: Manage your ongoing work</li>
+                <li>Tasks: Track individual items</li>
+                <li>Settings: Customize your experience</li>
               </ul>
             </div>
           </div>
         </div>
 
-        <!-- How to Register Section -->
+        <!-- Account Management -->
         <div class="accordion-item">
           <h2 class="accordion-header">
-            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#registration">
-              How to Register
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#accountHelp">
+              Account Management
             </button>
           </h2>
-          <div id="registration" class="accordion-collapse collapse" data-bs-parent="#mainAccordion">
+          <div id="accountHelp" class="accordion-collapse collapse" data-bs-parent="#helpAccordion">
             <div class="accordion-body">
-              <p>Registration is simple and free! Follow these steps:</p>
-              <ol>
-                <li>Click the "Sign Up" button</li>
-                <li>Enter your email address</li>
-                <li>Choose a secure password</li>
-                <li>Verify your email</li>
-                <li>Complete your profile</li>
-              </ol>
+              <h5>Managing Your Account</h5>
+              <p>Here's how to handle common account-related tasks:</p>
+              <ul>
+                <li>Update profile information in Settings</li>
+                <li>Change password through the security section</li>
+                <li>Enable two-factor authentication for extra security</li>
+                <li>Manage notification preferences</li>
+              </ul>
             </div>
           </div>
         </div>
 
-        <!-- Why Register Section -->
+        <!-- Common Issues -->
         <div class="accordion-item">
           <h2 class="accordion-header">
-            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#benefits">
-              Why Register?
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#commonIssues">
+              Common Issues
             </button>
           </h2>
-          <div id="benefits" class="accordion-collapse collapse" data-bs-parent="#mainAccordion">
+          <div id="commonIssues" class="accordion-collapse collapse" data-bs-parent="#helpAccordion">
             <div class="accordion-body">
-              <p>By registering with us, you'll get access to:</p>
+              <h5>Troubleshooting</h5>
+              <p>Solutions to common problems:</p>
               <ul>
-                <li>Unlimited task creation</li>
-                <li>Team collaboration features</li>
-                <li>Custom project templates</li>
-                <li>Progress analytics</li>
-                <li>Priority support</li>
+                <li>Forgot password? Use the reset link on the login page</li>
+                <li>Can't access features? Verify your account status</li>
+                <li>Loading issues? Clear your browser cache</li>
+                <li>Still need help? Contact support</li>
               </ul>
             </div>
           </div>
         </div>
       </div>
     </main>
-
-    <footer class="bg-light text-center py-3">
-      <div class="container">
-        <p class="mb-0">
-          &copy;
-          <?php echo date("Y"); ?>
-          PHP App, Inc. All rights reserved.
-        </p>
-      </div>
-    </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <script>
