@@ -17,6 +17,10 @@ RUN chown -R www-data:www-data /var/www/html
 # Copy custom virtual host configuration to override Apache's default
 COPY ./docker/vhost.conf /etc/apache2/sites-available/000-default.conf
 
+COPY ../../src /var/www/html
+
+COPY ../.env /var/www/html/.env
+
 # Set document root
 ENV APACHE_DOCUMENT_ROOT=/var/www/html/
 RUN sed -ri -e 's!/var/www/html!${APACHE_DOCUMENT_ROOT}!g' /etc/apache2/sites-available/*.conf
