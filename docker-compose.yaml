@@ -6,8 +6,6 @@ services:
     container_name: php-app
     ports:
       - ${APACHE_PORT}:80
-    volumes:
-      - ./src:/var/www/html/
     environment:
       - DB_HOST=mysql
       - DB_NAME=${MYSQL_DATABASE}
