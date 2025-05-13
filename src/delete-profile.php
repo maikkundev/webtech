@@ -95,6 +95,7 @@ if (isset($_POST['confirm_delete'])) {
       <input type="password" id="password" name="password" required>
     </div>
 
+
     <div>
       <button type="submit" name="confirm_delete" class="btn">Delete My Profile Permanently</button>
       <a href="edit-profile.php" class="btn">Cancel</a>
