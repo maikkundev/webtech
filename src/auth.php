@@ -90,7 +90,7 @@ if (isset($_POST['signup'])) {
       <a href="index.html">Αρχική</a>
       <a href="help.html">Βοήθεια</a>
       <a href="about.html">Σχετικά</a>
-      <a href="#">Εγγραφή</a>
+      <a href="auth.php">Σύνδεση / Εγγραφή</a>
       <button class="theme-toggle">🌓 Θέμα</button>
     </nav>
   </header>
