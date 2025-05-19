@@ -59,7 +59,6 @@ $lists_result = $stmt->get_result();
       <a href="help.html">Βοήθεια</a>
       <a href="about.html">Σχετικά</a>
       <a href="auth.php">Σύνδεση / Εγγραφή</a>
-      <a href="view_profile.php" class="active">Προφίλ</a>
       <button class="theme-toggle">🌓 Θέμα</button>
     </nav>
   </header>
