@@ -1,99 +1,109 @@
 <!DOCTYPE html>
 <html lang="el">
-  <head>
-    <meta charset="UTF-8" />
-    <title>Loop - Σχετικά</title>
-    <link rel="stylesheet" href="assets/css/style.css" />
-  </head>
-  <body>
-    <header class="navbar">
-      <div class="logo">
-        <img src="assets/images/looplogo.png" alt="Loop Logo" />
+
+<head>
+  <meta charset="UTF-8" />
+  <title>Loop - Σχετικά</title>
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+
+<body>
+  <header class="navbar">
+    <div class="logo">
+      <img src="assets/images/looplogo.png" alt="Loop Logo" />
+    </div>
+    <button class="menu-toggle" aria-label="Μενού">&#9776;</button>
+    <nav class="menu">
+      <div class="search-toggle">
+        <span class="search-icon">🔍</span>
+        <input type="text" class="search-input" placeholder="Αναζήτησε τραγούδι..." />
       </div>
-      <button class="menu-toggle" aria-label="Μενού">&#9776;</button>
-      <nav class="menu">
-        <div class="search-toggle">
-          <span class="search-icon">🔍</span>
-          <input type="text" class="search-input" placeholder="Αναζήτησε τραγούδι..." />
-        </div>
-        <a href="index.html">Αρχική</a>
-        <a href="about.html" class="active">Σχετικά</a>
-        <a href="help.html">Βοήθεια</a>
-        <a href="auth.php">Σύνδεση / Εγγραφή</a>
-        <button class="theme-toggle">🌓 Θέμα</button>
-      </nav>
-    </header>
+      <a href="index.html">Αρχική</a>
+      <a href="about.html" class="active">Σχετικά</a>
+      <a href="help.html">Βοήθεια</a>
+      <a href="auth.php"> Σύνδεση / Εγγραφή</a>
+      <button class="theme-toggle">🌓 Θέμα</button>
+    </nav>
+  </header>
 
-    <main class="container">
-      <h1>Σχετικά με το <span style="color: var(--accent-color)">Loop</span></h1>
+  <main class="container">
+    <h1>Σχετικά με το <span style="color: var(--accent-color)">Loop</span></h1>
 
-      <div class="accordion">
-        <div class="accordion-header">Σκοπός του Loop</div>
-        <div class="accordion-content">
-          <p>
-            Το <strong>Loop</strong> είναι μια πλατφόρμα ροής περιεχομένου όπου οι χρήστες μπορούν να δημιουργούν λίστες, να τις μοιράζονται
-            ή να τις κρατούν ιδιωτικές, και να ακολουθούν άλλους χρήστες.
-          </p>
-        </div>
+    <div class="accordion">
+      <div class="accordion-header">Σκοπός του Loop</div>
+      <div class="accordion-content">
+        <p>
+          Το <strong>Loop</strong> είναι μια πλατφόρμα ροής περιεχομένου όπου οι χρήστες μπορούν να δημιουργούν λίστες,
+          να τις μοιράζονται
+          ή να τις κρατούν ιδιωτικές, και να ακολουθούν άλλους χρήστες.
+        </p>
       </div>
+    </div>
 
-      <div class="accordion">
-        <div class="accordion-header">Πώς εγγράφομαι;</div>
-        <div class="accordion-content">
-          <ol>
-            <li>Κάνε κλικ στο κουμπί "Εγγραφή".</li>
-            <li>Συμπλήρωσε τα στοιχεία σου.</li>
-            <li>Επιβεβαίωσε το email σου.</li>
-            <li>Ξεκίνα να χρησιμοποιείς το Loop!</li>
-          </ol>
-        </div>
+    <div class="accordion">
+      <div class="accordion-header">Πώς εγγράφομαι;</div>
+      <div class="accordion-content">
+        <ol>
+          <li>Κάνε κλικ στο κουμπί "Εγγραφή".</li>
+          <li>Συμπλήρωσε τα στοιχεία σου.</li>
+          <li>Επιβεβαίωσε το email σου.</li>
+          <li>Ξεκίνα να χρησιμοποιείς το Loop!</li>
+        </ol>
       </div>
+    </div>
 
-      <div class="accordion">
-        <div class="accordion-header">Γιατί να εγγραφώ;</div>
-        <div class="accordion-content">
-          <ul>
-            <li>Δημιουργία προσωπικών λιστών</li>
-            <li>Αναπαραγωγή περιεχομένου</li>
-            <li>Ανακάλυψη άλλων χρηστών</li>
-          </ul>
-        </div>
+    <div class="accordion">
+      <div class="accordion-header">Γιατί να εγγραφώ;</div>
+      <div class="accordion-content">
+        <ul>
+          <li>Δημιουργία προσωπικών λιστών</li>
+          <li>Αναπαραγωγή περιεχομένου</li>
+          <li>Ανακάλυψη άλλων χρηστών</li>
+        </ul>
       </div>
+    </div>
 
-      <div class="accordion">
-        <div class="accordion-header">Τι τεχνολογία χρησιμοποιεί η πλατφόρμα;</div>
-        <div class="accordion-content">
-          <p>
-            Η πλατφόρμα βασίζεται σε σύγχρονες τεχνολογίες όπως HTML5, CSS3, JavaScript και σύστημα βάσης δεδομένων NoSQL για ταχύτατη
-            απόκριση. Σύντομα θα υπάρχει και mobile app με δυνατότητες offline ροής. Το frontend είναι σχεδιασμένο για απόλυτη ταχύτητα,
-            responsive εμπειρία και ευκολία πλοήγησης.
-          </p>
-        </div>
+    <div class="accordion">
+      <div class="accordion-header">Τι τεχνολογία χρησιμοποιεί η πλατφόρμα;</div>
+      <div class="accordion-content">
+        <p>
+          Η πλατφόρμα βασίζεται σε σύγχρονες τεχνολογίες όπως HTML5, CSS3, JavaScript και σύστημα βάσης δεδομένων NoSQL
+          για ταχύτατη
+          απόκριση. Σύντομα θα υπάρχει και mobile app με δυνατότητες offline ροής. Το frontend είναι σχεδιασμένο για
+          απόλυτη ταχύτητα,
+          responsive εμπειρία και ευκολία πλοήγησης.
+        </p>
       </div>
+    </div>
 
-      <div class="accordion">
-        <div class="accordion-header">Είναι ασφαλής η χρήση του Loop από κινητό ή τάμπλετ;</div>
-        <div class="accordion-content">
-          <p>
-            Απολύτως. Το Loop είναι πλήρως responsive και εφαρμόζει τα πρότυπα ασφαλείας HTTPS, πολιτική cookies, και validation σε όλα τα
-            inputs. Ο λογαριασμός σου προστατεύεται με κρυπτογράφηση και τα sessions λήγουν αυτόματα μετά από αδράνεια για επιπλέον
-            προστασία.
-          </p>
-        </div>
+    <div class="accordion">
+      <div class="accordion-header">Είναι ασφαλής η χρήση του Loop από κινητό ή τάμπλετ;</div>
+      <div class="accordion-content">
+        <p>
+          Απολύτως. Το Loop είναι πλήρως responsive και εφαρμόζει τα πρότυπα ασφαλείας HTTPS, πολιτική cookies, και
+          validation σε όλα τα
+          inputs. Ο λογαριασμός σου προστατεύεται με κρυπτογράφηση και τα sessions λήγουν αυτόματα μετά από αδράνεια για
+          επιπλέον
+          προστασία.
+        </p>
       </div>
+    </div>
 
-      <div class="accordion">
-        <div class="accordion-header">Ποια δεδομένα συλλέγει το Loop και γιατί;</div>
-        <div class="accordion-content">
-          <p>
-            Το <strong>Loop</strong> συλλέγει μόνο τα απαραίτητα δεδομένα για να λειτουργήσει σωστά η εμπειρία σου: όνομα χρήστη, email,
-            λίστες παρακολούθησης, και προτιμήσεις θέματος. Αυτά τα δεδομένα χρησιμοποιούνται αποκλειστικά για προσωποποιημένες προτάσεις
-            και δεν πωλούνται ή κοινοποιούνται σε τρίτους.
-          </p>
-        </div>
+    <div class="accordion">
+      <div class="accordion-header">Ποια δεδομένα συλλέγει το Loop και γιατί;</div>
+      <div class="accordion-content">
+        <p>
+          Το <strong>Loop</strong> συλλέγει μόνο τα απαραίτητα δεδομένα για να λειτουργήσει σωστά η εμπειρία σου: όνομα
+          χρήστη, email,
+          λίστες παρακολούθησης, και προτιμήσεις θέματος. Αυτά τα δεδομένα χρησιμοποιούνται αποκλειστικά για
+          προσωποποιημένες προτάσεις
+          και δεν πωλούνται ή κοινοποιούνται σε τρίτους.
+        </p>
       </div>
-    </main>
+    </div>
+  </main>
 
-    <script src="assets/js/script.js"></script>
-  </body>
+  <script src="assets/js/script.js"></script>
+</body>
+
 </html>

@@ -16,6 +16,9 @@ if (isset($_POST['login'])) {
     if (password_verify($password, $row['password'])) {
       $_SESSION['id']       = $row['id'];
       $_SESSION['username'] = $row['username'];
+
+      $redirect = $_GET['redirect'] ?? 'home.php'; //erotima7
+
       header('Location: home.php');
       exit;
     }
@@ -88,8 +91,9 @@ if (isset($_POST['signup'])) {
         <input type="text" class="search-input" placeholder="Αναζήτησε τραγούδι..." />
       </div>
       <a href="index.html">Αρχική</a>
-      <a href="help.html">Βοήθεια</a>
       <a href="about.html">Σχετικά</a>
+      <a href="help.html">Βοήθεια</a>
+
       <a href="auth.php">Σύνδεση / Εγγραφή</a>
       <button class="theme-toggle">🌓 Θέμα</button>
     </nav>
@@ -144,44 +148,6 @@ if (isset($_POST['signup'])) {
       </div>
     </section>
   </main>
-
-
-
-
-
-
-
-
-  <!--    <h2>Login</h2>
-  <form method="post">
-    <label for="login_username">Username:</label>
-    <input type="text" id="login_username" name="username" required>
-    <br>
-    <label for="login_password">Password:</label>
-    <input type="password" id="login_password" name="password" required>
-    <br>
-    <input type="submit" name="login" value="Login">
-  </form>
-
-  <h2>Signup</h2>
-  <form method="post">
-    <label for="signup_firstname">First Name:</label>
-    <input type="text" id="signup_firstname" name="firstname" required>
-    <br>
-    <label for="signup_lastname">Last Name:</label>
-    <input type="text" id="signup_lastname" name="lastname" required>
-    <br>
-    <label for="signup_username">Username:</label>
-    <input type="text" id="signup_username" name="username" required>
-    <br>
-    <label for="signup_email">Email:</label>
-    <input type="email" id="signup_email" name="email" required>
-    <br>
-    <label for="signup_password">Password:</label>
-    <input type="password" id="signup_password" name="password" required>
-    <br>
-    <input type="submit" name="signup" value="Sign Up">
-  </form> -->
 
   <script src="assets/js/script.js"></script>
 </body>

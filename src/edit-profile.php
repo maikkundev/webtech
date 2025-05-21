@@ -4,7 +4,10 @@ require 'db.php';
 
 // Check if the user is logged in
 if (!isset($_SESSION['id'])) {
-  header('Location: auth.php');
+
+  // Αποθηκεύουμε το τρέχον URI ώστε μετά την επιτυχή σύνδεση να γυρίζει ο χρήστης στη σελίδα που ζήτησε
+  $redirectUrl = urlencode($_SERVER['REQUEST_URI']);
+  header("Location: auth.php?redirect=$redirectUrl"); //erotima7
   exit;
 }
 
