@@ -101,16 +101,17 @@ if (isset($_POST['update_profile'])) {
 ?>
 
 <!DOCTYPE html>
-<html lang="en">
+<html lang="el">
 
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="assets/css/style.css">
   <title>Edit Profile</title>
 </head>
 
 <body>
-  <h1>Your Profile</h1>
+  <h1>Το προφίλ μου</h1>
 
   <?php if ($success_message): ?>
     <div class="success"><?= htmlspecialchars($success_message) ?></div>
@@ -122,17 +123,17 @@ if (isset($_POST['update_profile'])) {
 
   <form method="post">
     <div class="form-group">
-      <label for="username">Username (cannot be changed):</label>
+      <label for="username">Όνομα χρήστη (δεν μπορεί να αλλάξει):</label>
       <input type="text" id="username" value="<?= htmlspecialchars($user['username']) ?>" readonly>
     </div>
 
     <div class="form-group">
-      <label for="firstname">First Name:</label>
+      <label for="firstname">Όνομα:</label>
       <input type="text" id="firstname" name="firstname" value="<?= htmlspecialchars($user['firstname']) ?>" required>
     </div>
 
     <div class="form-group">
-      <label for="lastname">Last Name:</label>
+      <label for="lastname">Επίθετο:</label>
       <input type="text" id="lastname" name="lastname" value="<?= htmlspecialchars($user['lastname']) ?>" required>
     </div>
 
@@ -142,28 +143,28 @@ if (isset($_POST['update_profile'])) {
     </div>
 
     <div class="password-section">
-      <h3>Change Password</h3>
-      <p>Leave blank if you don't want to change your password</p>
+      <h3>Αλλαγή κωδικού</h3>
+      <p>(Κενό αν δεν θέλεις να αλλάξεις τον κωδικό σου)</p>
 
       <div class="form-group">
-        <label for="current_password">Current Password:</label>
+        <label for="current_password">Τρέχων κωδικός:</label>
         <input type="password" id="current_password" name="current_password">
       </div>
 
       <div class="form-group">
-        <label for="new_password">New Password:</label>
+        <label for="new_password">Νέος κωδικός:</label>
         <input type="password" id="new_password" name="new_password">
       </div>
     </div>
 
     <div class="actions">
-      <button type="submit" name="update_profile" class="btn">Update Profile</button>
-      <a href="view-profile.php" class="btn">View Profile</a>
-      <a href="delete-profile.php" class="btn" onclick="return confirm('Are you sure you want to delete your profile? This action cannot be undone.');">Delete Profile</a>
+      <button type="submit" name="Upgrade profile" class="btn">Αποθήκευση αλλαγών</button>
+      <a href="view-profile.php" class="btn">Εμφάνιση προφίλ</a>
+      <a href="delete-profile.php" class="btn" onclick="return confirm('Είστε βέβαιοι ότι θέλετε να διαγράψετε το προφίλ σας; Αυτή η ενέργεια δεν μπορεί να αναιρεθεί.');">Διαγραφή προφίλ</a>
     </div>
   </form>
 
-  <p><a href="index.html">Return to Homepage</a></p>
+  <p><a href="index.html">Επιστροφή στην αρχική σελίδα</a></p>
 </body>
 
 </html>

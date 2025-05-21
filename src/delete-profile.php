@@ -70,7 +70,7 @@ if (isset($_POST['confirm_delete'])) {
 ?>
 
 <!DOCTYPE html>
-<html lang="en">
+<html lang="el">
 
 <head>
   <meta charset="UTF-8">
@@ -80,10 +80,29 @@ if (isset($_POST['confirm_delete'])) {
 </head>
 
 <body>
-  <h1>Delete Your Profile</h1>
+  <header class="navbar">
+    <div class="logo">
+      <a href="index.html"><img src="assets/images/looplogo.png" alt="Loop Logo" /></a>
+    </div>
+    <button class="menu-toggle" aria-label="Μενού">&#9776;</button>
+
+    <nav class="menu">
+      <div class="search-toggle">
+        <span class="search-icon">🔍</span>
+        <input type="text" class="search-input" placeholder="Αναζήτησε τραγούδι..." />
+      </div>
+      <a href="index.html">Αρχική</a>
+      <a href="help.html">Βοήθεια</a>
+      <a href="about.html">Σχετικά</a>
+      <a href="auth.php">Σύνδεση / Εγγραφή</a>
+      <button class="theme-toggle">🌓 Θέμα</button>
+    </nav>
+  </header>
+  <h1>Διαγραφή του προφίλ σου</h1>
 
   <div class="warning">
-    <strong>Warning!</strong> This action cannot be undone. All your data, including your profile information and all lists you have created, will be permanently deleted.
+    <strong>Προειδοποίηση!</strong>
+    Αυτή η ενέργεια δεν μπορεί να αναιρεθεί. Όλα τα δεδομένα σας, συμπεριλαμβανομένων των στοιχείων του προφίλ σας και όλων των λιστών που έχετε δημιουργήσει, θα διαγραφούν οριστικά.
   </div>
 
   <?php if ($error_message): ?>
@@ -92,12 +111,12 @@ if (isset($_POST['confirm_delete'])) {
 
   <form method="post" onsubmit="return confirm('Are you absolutely sure you want to delete your profile? This action cannot be undone.');">
     <div class="form-group">
-      <label for="password">Enter your password to confirm deletion:</label>
+      <label for="password">Εισαγάγετε τον κωδικό πρόσβασής σας για να επιβεβαιώσετε τη διαγραφή:</label>
       <input type="password" id="password" name="password" required>
     </div>
     <div>
-      <button type="submit" name="confirm_delete" class="btn">Delete My Profile Permanently</button>
-      <a href="edit-profile.php" class="btn">Cancel</a>
+      <button type="submit" name="confirm_delete" class="btn">Διαγραφή του προφίλ μου οριστικά</button>
+      <a href="edit-profile.php" class="btn">Ακύρωση</a>
     </div>
   </form>
 </body>
