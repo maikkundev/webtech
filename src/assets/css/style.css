@@ -169,7 +169,8 @@ body {
     display: flex;
   }
 
-  .menu a, .menu .theme-toggle {
+  .menu a,
+  .menu .theme-toggle {
     padding: 10px;
     text-align: left;
     width: 100%;
@@ -261,4 +262,73 @@ body {
   font-size: 15px;
   line-height: 1.5;
   color: var(--text-color);
+}
+
+/* Styles for delete profile page */
+.warning {
+  background-color: var(--card-bg);
+  border-left: 4px solid var(--accent-color);
+  padding: 15px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+}
+
+.warning strong {
+  color: var(--accent-color);
+  display: block;
+  margin-bottom: 10px;
+  font-size: 1.1em;
+}
+
+.error {
+  background-color: var(--card-bg);
+  color: var(--accent-color);
+  padding: 15px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+  border-left: 4px solid var(--accent-color);
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 8px;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid var(--text-color);
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  border-radius: 4px;
+}
+
+.button-group {
+  display: flex;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.btn {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  text-decoration: none;
+  color: var(--text-color);
+  background-color: var(--card-bg);
+  transition: transform 0.2s;
+}
+
+.btn.accent {
+  background-color: var(--accent-color);
+  color: white;
+}
+
+.btn:hover {
+  transform: translateY(-2px);
 }

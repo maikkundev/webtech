@@ -75,6 +75,7 @@ if (isset($_POST['confirm_delete'])) {
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="assets/css/style.css">
   <title>Delete Profile</title>
 </head>
 
@@ -94,8 +95,6 @@ if (isset($_POST['confirm_delete'])) {
       <label for="password">Enter your password to confirm deletion:</label>
       <input type="password" id="password" name="password" required>
     </div>
-
-
     <div>
       <button type="submit" name="confirm_delete" class="btn">Delete My Profile Permanently</button>
       <a href="edit-profile.php" class="btn">Cancel</a>
