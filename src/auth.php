@@ -1,6 +1,6 @@
 <?php
 session_start();
-require 'db.php';
+require 'includes/db.php';
 
 $error = '';
 if (isset($_POST['login'])) {
@@ -16,7 +16,7 @@ if (isset($_POST['login'])) {
     if (password_verify($password, $row['password'])) {
       $_SESSION['id']       = $row['id'];
       $_SESSION['username'] = $row['username'];
-      header('Location: home.php');
+      header('Location: view-playlists.php');
       exit;
     }
   }
