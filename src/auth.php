@@ -55,12 +55,13 @@ if (isset($_POST['signup'])) {
 }
 ?>
 <!DOCTYPE html>
-<html lang="en">
+<html lang="el">
 
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="assets/css/style.css">
   <title>Authentication Form</title>
 </head>
 
@@ -72,7 +73,86 @@ if (isset($_POST['signup'])) {
     <div class="success"><?= htmlspecialchars($success) ?></div>
   <?php endif ?>
 
-  <h2>Login</h2>
+
+
+
+  <header class="navbar">
+    <div class="logo">
+      <a href="index.html"><img src="assets/images/looplogo.png" alt="Loop Logo" /></a>
+    </div>
+    <button class="menu-toggle" aria-label="Μενού">&#9776;</button>
+
+    <nav class="menu">
+      <div class="search-toggle">
+        <span class="search-icon">🔍</span>
+        <input type="text" class="search-input" placeholder="Αναζήτησε τραγούδι..." />
+      </div>
+      <a href="index.html">Αρχική</a>
+      <a href="help.html">Βοήθεια</a>
+      <a href="about.html">Σχετικά</a>
+      <a href="auth.php">Σύνδεση / Εγγραφή</a>
+      <button class="theme-toggle">🌓 Θέμα</button>
+    </nav>
+  </header>
+
+
+  <main class="container">
+    <h1>🔐 Καλωσήρθες στο <span class="accent">Loop</span></h1>
+    <p class="subtitle">Σύνδεση ή δημιουργία νέου λογαριασμού</p>
+
+    <?php if ($error): ?>
+      <div class="card" style="background-color: #ffcccc; color: #800000; margin-bottom: 20px;">
+        <?= htmlspecialchars($error) ?>
+      </div>
+    <?php endif ?>
+    <?php if (isset($success)): ?>
+      <div class="card" style="background-color: #ccffcc; color: #006600; margin-bottom: 20px;">
+        <?= htmlspecialchars($success) ?>
+      </div>
+    <?php endif ?>
+
+
+    <section class="cards">
+      <!-- Login Form -->
+      <div class="card">
+        <h2>Είσοδος</h2>
+        <form method="post">
+          <label for="login_username">Όνομα χρήστη:</label>
+          <input type="text" id="login_username" name="username" required><br>
+          <label for="login_password">Κωδικός:</label>
+          <input type="password" id="login_password" name="password" required><br>
+          <input type="submit" name="login" value="Σύνδεση">
+        </form>
+      </div>
+
+      <!-- Signup Form -->
+      <div class="card">
+        <h2>Εγγραφή</h2>
+        <form method="post">
+          <label for="signup_firstname">Όνομα:</label>
+          <input type="text" id="signup_firstname" name="firstname" required><br>
+          <label for="signup_lastname">Επώνυμο:</label>
+          <input type="text" id="signup_lastname" name="lastname" required><br>
+          <label for="signup_username">Όνομα χρήστη:</label>
+          <input type="text" id="signup_username" name="username" required><br>
+          <label for="signup_email">Email:</label>
+          <input type="email" id="signup_email" name="email" required><br>
+          <label for="signup_password">Κωδικός:</label>
+          <input type="password" id="signup_password" name="password" required><br>
+          <input type="submit" name="signup" value="Εγγραφή">
+        </form>
+      </div>
+    </section>
+  </main>
+
+
+
+
+
+
+
+
+  <!--    <h2>Login</h2>
   <form method="post">
     <label for="login_username">Username:</label>
     <input type="text" id="login_username" name="username" required>
@@ -101,7 +181,9 @@ if (isset($_POST['signup'])) {
     <input type="password" id="signup_password" name="password" required>
     <br>
     <input type="submit" name="signup" value="Sign Up">
-  </form>
+  </form> -->
+
+  <script src="assets/js/script.js"></script>
 </body>
 
 </html>

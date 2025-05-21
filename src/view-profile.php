@@ -35,48 +35,65 @@ $lists_result = $stmt->get_result();
 ?>
 
 <!DOCTYPE html>
-<html lang="en">
+<html lang="el">
 
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>View Profile</title>
+  <link rel="stylesheet" href="assets/css/style.css" />
 </head>
 
 <body>
-  <h1>Your Profile</h1>
-
-  <div class="profile-info">
-    <div class="profile-field">
-      <label>Username:</label>
-      <div><?= htmlspecialchars($user['username']) ?></div>
+  <header class="navbar">
+    <div class="logo">
+      <a href="index.html"><img src="assets/images/looplogo.png" alt="Loop Logo" /></a>
     </div>
+    <button class="menu-toggle" aria-label="Μενού">&#9776;</button>
+    <nav class="menu">
+      <div class="search-toggle">
+        <span class="search-icon">🔍</span>
+        <input type="text" class="search-input" placeholder="Αναζήτησε τραγούδι..." />
+      </div>
+      <a href="index.html">Αρχική</a>
+      <a href="help.html">Βοήθεια</a>
+      <a href="about.html">Σχετικά</a>
+      <a href="auth.php">Σύνδεση / Εγγραφή</a>
+      <button class="theme-toggle">🌓 Θέμα</button>
+    </nav>
+  </header>
 
-    <div class="profile-field">
-      <label>First Name:</label>
-      <div><?= htmlspecialchars($user['firstname']) ?></div>
+
+  <main class="container fade-in">
+    <h1>👤 Το προφίλ σου</h1>
+    <section class="features">
+      <div class="feature-box">
+        <h3>Όνομα</h3>
+        <p><?= htmlspecialchars($user['firstname']) ?></p>
+      </div>
+      <div class="feature-box">
+        <h3>Επώνυμο</h3>
+        <p><?= htmlspecialchars($user['lastname']) ?></p>
+      </div>
+      <div class="feature-box">
+        <h3>Όνομα χρήστη</h3>
+        <p><?= htmlspecialchars($user['username']) ?></p>
+      </div>
+      <div class="feature-box">
+        <h3>Email</h3>
+        <p><?= htmlspecialchars($user['email']) ?></p>
+      </div>
+      <div class="feature-box">
+        <h3>Member Since</h3>
+        <p><?= date('F j, Y', strtotime($user['created_at'])) ?></p>
+      </div>
+    </section>
+
+    <div style="margin-top: 30px; text-align: center;">
+      <a href="edit-profile.php" class="btn"> Επεξεργασία Προφίλ</a>
+      <a href="index.html" class="btn"> Αρχική</a>
     </div>
-
-    <div class="profile-field">
-      <label>Last Name:</label>
-      <div><?= htmlspecialchars($user['lastname']) ?></div>
-    </div>
-
-    <div class="profile-field">
-      <label>Email:</label>
-      <div><?= htmlspecialchars($user['email']) ?></div>
-    </div>
-
-    <div class="profile-field">
-      <label>Member Since:</label>
-      <div><?= date('F j, Y', strtotime($user['created_at'])) ?></div>
-    </div>
-  </div>
-
-  <div>
-    <a href="edit-profile.php" class="btn">Edit Profile</a>
-    <a href="index.html" class="btn">Homepage</a>
-  </div>
+  </main>
 
   <!-- If you have lists to display, uncomment and modify as needed -->
   <!--
@@ -96,6 +113,8 @@ $lists_result = $stmt->get_result();
         <?php endif; ?>
     </div>
     -->
+
+  <script src="assets/js/script.js"></script>
 </body>
 
 </html>

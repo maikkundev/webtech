@@ -264,6 +264,40 @@ body {
   color: var(--text-color);
 }
 
+
+/* κουμπια σε view-profile */
+.btn {
+  display: inline-block;
+  padding: 10px 18px;
+  margin: 5px;
+  background-color: var(--accent-color);
+  color: #fff;
+  text-decoration: none;
+  border-radius: 8px;
+  transition: background 0.3s;
+}
+
+.btn:hover {
+  background-color: #b4060f;
+}
+
+
+/* κουμπια σε view-profile */
+.btn {
+  display: inline-block;
+  padding: 10px 18px;
+  margin: 5px;
+  background-color: var(--accent-color);
+  color: #fff;
+  text-decoration: none;
+  border-radius: 8px;
+  transition: background 0.3s;
+}
+
+.btn:hover {
+  background-color: #b4060f;
+}
+
 /* Styles for delete profile page */
 .warning {
   background-color: var(--card-bg);
