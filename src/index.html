@@ -1,57 +1,64 @@
 <!DOCTYPE html>
 <html lang="el">
-  <head>
-    <meta charset="UTF-8" />
-    <title>Loop - Βοήθεια</title>
-    <link rel="stylesheet" href="assets/css/style.css" />
-  </head>
-  <body>
-    <header class="navbar">
-      <div class="logo">
-        <a href="index.html"><img src="assets/images/looplogo.png" alt="Loop Logo" /></a>
+
+<head>
+  <meta charset="UTF-8" />
+  <title>Loop - Βοήθεια</title>
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+
+<body>
+  <header class="navbar">
+    <div class="logo">
+      <a href="index.html"><img src="assets/images/looplogo.png" alt="Loop Logo" /></a>
+    </div>
+    <button class="menu-toggle" aria-label="Μενού">&#9776;</button>
+
+    <nav class="menu">
+      <div class="search-toggle">
+        <span class="search-icon">🔍</span>
+        <input type="text" class="search-input" placeholder="Αναζήτησε τραγούδι..." />
       </div>
-      <button class="menu-toggle" aria-label="Μενού">&#9776;</button>
+      <a href="index.html" class="active">Αρχική</a>
 
-      <nav class="menu">
-        <div class="search-toggle">
-          <span class="search-icon">🔍</span>
-          <input type="text" class="search-input" placeholder="Αναζήτησε τραγούδι..." />
-        </div>
-        <a href="index.html"  class="active">Αρχική</a>
-        
-        <a href="about.html">Σχετικά</a>
-        <a href="help.html">Βοήθεια</a>
-        <a href="auth.php">Σύνδεση / Εγγραφή</a>
-        <button class="theme-toggle">🌓 Θέμα</button>
-      </nav>
-    </header>
+      <a href="help.html">Βοήθεια</a>
+      <a href="about.html">Σχετικά</a>
 
-    <main class="container">
-      <h1>🎧 Καλωσήρθες στο <span class="accent">Loop</span></h1>
-      <p class="subtitle">Η νέα εμπειρία ροής περιεχομένου, φτιαγμένη για σένα!</p>
+      <a href="auth.php">Σύνδεση / Εγγραφή</a>
+      <button class="theme-toggle">🌓 Θέμα</button>
+    </nav>
+  </header>
 
-      <section class="features">
-        <div class="feature-box">
-          <img src="assets/images/song.jpg" alt="Άκουσε μαζί με άλλους" />
-          <p>
-            Βρες πρώτος το επόμενο αγαπημένο σου τραγούδι. Το Loop σε φέρνει σε επαφή με αυθεντικούς ήχους και ανεξάρτητους δημιουργούς.
-          </p>
-        </div>
+  <main class="container">
+    <h1>🎧 Καλωσήρθες στο <span class="accent">Loop</span></h1>
+    <p class="subtitle">Η νέα εμπειρία ροής περιεχομένου, φτιαγμένη για σένα!</p>
 
-        <div class="feature-box">
-          <img src="assets/images/playlist.jpg" alt="Προσωπικές λίστες" />
-          <p>
-            Το Loop μαθαίνει τι σου αρέσει. Δημιούργησε προσωπικές λίστες με διάθεση, ώρα ή στιγμή — και δες τι ακούν όσοι σου μοιάζουν.
-          </p>
-        </div>
+    <section class="features">
+      <div class="feature-box">
+        <img src="assets/images/song.jpg" alt="Άκουσε μαζί με άλλους" />
+        <p>
+          Βρες πρώτος το επόμενο αγαπημένο σου τραγούδι. Το Loop σε φέρνει σε επαφή με αυθεντικούς ήχους και
+          ανεξάρτητους δημιουργούς.
+        </p>
+      </div>
 
-        <div class="feature-box">
-          <img src="assets/images/distance.jpg" alt="Ανακάλυψε μουσική" />
-          <p>Άκουσε την ίδια μουσική ταυτόχρονα με τους φίλους σου — σαν να είστε στον ίδιο χώρο, ακόμη κι αν σας χωρίζουν χιλιόμετρα.</p>
-        </div>
-      </section>
-    </main>
+      <div class="feature-box">
+        <img src="assets/images/playlist.jpg" alt="Προσωπικές λίστες" />
+        <p>
+          Το Loop μαθαίνει τι σου αρέσει. Δημιούργησε προσωπικές λίστες με διάθεση, ώρα ή στιγμή — και δες τι ακούν όσοι
+          σου μοιάζουν.
+        </p>
+      </div>
 
-    <script src="assets/js/script.js"></script>
-  </body>
+      <div class="feature-box">
+        <img src="assets/images/distance.jpg" alt="Ανακάλυψε μουσική" />
+        <p>Άκουσε την ίδια μουσική ταυτόχρονα με τους φίλους σου — σαν να είστε στον ίδιο χώρο, ακόμη κι αν σας χωρίζουν
+          χιλιόμετρα.</p>
+      </div>
+    </section>
+  </main>
+
+  <script src="assets/js/script.js"></script>
+</body>
+
 </html>
