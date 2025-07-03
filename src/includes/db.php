@@ -1,4 +1,7 @@
 <?php
+
+global $db;
+
 // Prevent direct access to this file
 defined('SECURE_ACCESS') or define('SECURE_ACCESS', true);
 if (!defined('SECURE_ACCESS')) {
@@ -27,7 +30,7 @@ $dbUser = $env['MYSQL_USER']     ?? 'user';
 $dbPass = $env['MYSQL_PASSWORD'] ?? 'mypassword';
 
 try {
-  $db = new mysqli($dbHost, $dbUser, $dbPass, $dbName, $dbPort);
+    $db = new mysqli($dbHost, $dbUser, $dbPass, $dbName, $dbPort);
 } catch (mysqli_sql_exception $e) {
   die("Connection failed: " . $e->getMessage());
 }

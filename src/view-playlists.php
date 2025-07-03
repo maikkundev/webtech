@@ -1,6 +1,7 @@
 <?php
 session_start();
 require 'includes/db.php';
+global $db;
 
 // Check if the user is logged in
 if (!isset($_SESSION['id'])) {
